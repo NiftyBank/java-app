@@ -1,0 +1,502 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.ec</groupId>
+        <artifactId>ec-parent-pom</artifactId>
+        <version>11.1.SP03.PATCH03</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.ec</groupId>
+    <artifactId>ec-app</artifactId>
+    <version>11.1.SP03.PATCH03</version>
+    <packaging>ear</packaging>
+    <description>packaging of ear module</description>
+
+    <scm>
+        <connection>scm:hg:https://bitbucket.org/energycomponents/ec-app</connection>
+        <developerConnection>scm:hg:https://bitbucket.org/energycomponents/ec-app</developerConnection>
+        <url>http://bitbucket.org/energycomponents/ec-app</url>
+    </scm>
+
+    <!-- FRMW Dependencies Version Properties -->
+    <properties>
+        <frmw-calc.version>${project.version}</frmw-calc.version>
+        <frmw-config.version>${project.version}</frmw-config.version>
+        <frmw-core.version>${project.version}</frmw-core.version>
+        <frmw-ecis.version>${project.version}</frmw-ecis.version>
+        <frmw-mhm.version>${project.version}</frmw-mhm.version>
+        <frmw-pf.version>${project.version}</frmw-pf.version>
+        <frmw-pf-jsf.version>${project.version}</frmw-pf-jsf.version>
+        <frmw-report.version>${project.version}</frmw-report.version>
+        <frmw-bpm.version>${project.version}</frmw-bpm.version>
+
+        <!-- PROD Dependencies Version Properties -->
+        <prod.version>${project.version}</prod.version>
+
+        <!-- REVN Dependencies Version Properties -->
+        <revn.version>${project.version}</revn.version>
+
+        <!-- SALE Dependencies Version Properties -->
+        <sale.version>${project.version}</sale.version>
+
+        <!-- TRAN Dependencies Version Properties -->
+        <tran.version>${project.version}</tran.version>
+        <!-- ONLINE HELP Dependencies Version Properties -->
+        <onlinehelp.version>${project.version}</onlinehelp.version>
+
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.ec.frmw</groupId>
+            <artifactId>frmw-report-jasper</artifactId>
+            <version>${frmw-report.version}</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ec.frmw</groupId>
+            <artifactId>frmw-report-jasper-client</artifactId>
+            <version>${frmw-report.version}</version>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ec.frmw</groupId>
+            <artifactId>frmw-pf</artifactId>
+            <version>${frmw-pf.version}</version>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ec.frmw</groupId>
+            <artifactId>frmw-core</artifactId>
+            <version>${frmw-core.version}</version>
+            <type>ejb</type>
+            <exclusions>
+                <exclusion>
+                    <!-- already provided by com.ec:dom4j -->
+                    <groupId>dom4j</groupId>
+                    <artifactId>dom4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ec.frmw</groupId>
+            <artifactId>frmw-pf-jsf</artifactId>
+            <version>${frmw-pf-jsf.version}</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ec.frmw</groupId>
+            <artifactId>frmw-config</artifactId>
+            <version>${frmw-config.version}</version>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ec.frmw</groupId>
+            <artifactId>frmw-ecis</artifactId>
+            <version>${frmw-ecis.version}</version>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ec.frmw</groupId>
+            <artifactId>frmw-calc</artifactId>
+            <version>${frmw-calc.version}</version>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ec.frmw</groupId>
+            <artifactId>frmw-report</artifactId>
+            <version>${frmw-report.version}</version>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ec.frmw</groupId>
+            <artifactId>frmw-mhm</artifactId>
+            <version>${frmw-mhm.version}</version>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ec.prod</groupId>
+            <artifactId>prod</artifactId>
+            <version>${prod.version}</version>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ec.tran</groupId>
+            <artifactId>tran</artifactId>
+            <version>${tran.version}</version>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ec.sale</groupId>
+            <artifactId>sale</artifactId>
+            <version>${sale.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.revn</groupId>
+            <artifactId>revn</artifactId>
+            <version>${revn.version}</version>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-api-process</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-core</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-core-ec</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-domain-procaction</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-domain-procaction-shared</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-domain-notification</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-domain-notification-shared</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-domain-repository-shared</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-domain-process-shared</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-domain-task-shared</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-domain-jbpm-shared</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-ext-ec</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-ext-ec-ws</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw.bpm</groupId>
+            <artifactId>ecbpm-ext-ec-deprecated</artifactId>
+            <version>${frmw-bpm.version}</version>
+            <type>ejb</type>
+        </dependency>
+
+
+        <!-- eXTERNAL LIBRARIES JUST CHUCK THEM IN THERE -->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc7_g</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>opensymphony</groupId>
+            <artifactId>quartz-all</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cryptix</groupId>
+            <artifactId>cryptix</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>jfree</groupId>
+            <artifactId>jcommon</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sourceforge.jexcelapi</groupId>
+            <artifactId>jxl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ec</groupId>
+            <artifactId>dom4j</artifactId>
+        </dependency>
+
+        <!-- We cannot use Wildfly's version of jaxen, because it cannot access the dom4j patch -->
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+        </dependency>
+
+        <!-- Use these dependencies if you want to debug authentication issues with ec-app
+        update the versions to match the current WildFly installation, do not rely on the transient dependencies
+        <dependency>
+            <groupId>com.ec.wildfly</groupId>
+            <artifactId>spnego-auth</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.undertow</groupId>
+            <artifactId>undertow-servlet</artifactId>
+            <version>1.1.8.Final</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.wildfly</groupId>
+            <artifactId>wildfly-undertow</artifactId>
+            <version>${wildfly.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.ec.frmw</groupId>
+            <artifactId>frmw-core</artifactId>
+            <version>${project.version}</version>
+        </dependency-->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>dependency-convergence</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <phase>validate</phase>
+                        <configuration>
+                            <rules>
+                                <DependencyConvergence />
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <configuration>
+                    <version>7</version>
+                    <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    <applicationName>${project.artifactId}</applicationName>
+                    <filtering>true</filtering>
+                    <useBaseVersion>true</useBaseVersion>
+                    <archive>
+                        <manifestEntries>
+                            <Dependencies>com.oracle.jdbc7_g,org.jboss.as.server,org.jboss.msc,org.apache.httpcomponents,org.jboss.logmanager,org.jdom,org.apache.log4j,org.apache.xerces,org.picketlink,net.sourceforge.jtds,org.jgroups,com.aspose.aspose-cells,org.apache.commons.codec,io.undertow.servlet,io.undertow.core</Dependencies>
+                            <!-- TODO: verify: picketlink can not be resolved in the jboss-deployment-structure.xml -->
+                            <!--Dependencies>org.picketlink,javax.mail.api,org.jaxen</Dependencies-->
+                        </manifestEntries>
+                    </archive>
+
+                    <modules>
+                        <webModule>
+                            <groupId>com.ec.frmw</groupId>
+                            <artifactId>frmw-pf-jsf</artifactId>
+                            <contextRoot>/</contextRoot>
+                        </webModule>
+
+                        <webModule>
+                            <groupId>com.ec.frmw</groupId>
+                            <artifactId>frmw-report-jasper</artifactId>
+                            <contextRoot>/com.ec.frmw.report.jasper</contextRoot>
+                        </webModule>
+
+                        <webModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-ext-ec-ws</artifactId>
+                            <contextRoot>/com.ec.frmw.jbpm</contextRoot>
+                        </webModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw</groupId>
+                            <artifactId>frmw-report-jasper-client</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw</groupId>
+                            <artifactId>frmw-core</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw</groupId>
+                            <artifactId>frmw-config</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw</groupId>
+                            <artifactId>frmw-calc</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw</groupId>
+                            <artifactId>frmw-pf</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw</groupId>
+                            <artifactId>frmw-mhm</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw</groupId>
+                            <artifactId>frmw-report</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw</groupId>
+                            <artifactId>frmw-ecis</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.prod</groupId>
+                            <artifactId>prod</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.tran</groupId>
+                            <artifactId>tran</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.sale</groupId>
+                            <artifactId>sale</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.revn</groupId>
+                            <artifactId>revn</artifactId>
+                        </ejbModule>
+                        <ejbModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-api-process</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-core</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-core-ec</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-domain-procaction</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-domain-procaction-shared</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-domain-notification</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-domain-notification-shared</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-domain-repository-shared</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-domain-process-shared</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-domain-task-shared</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-domain-jbpm-shared</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-ext-ec</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.ec.frmw.bpm</groupId>
+                            <artifactId>ecbpm-ext-ec-deprecated</artifactId>
+                        </ejbModule>
+                    </modules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

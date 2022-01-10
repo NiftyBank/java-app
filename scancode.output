@@ -1,0 +1,1291 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "30.1.0",
+      "options": {
+        "input": [
+          "./"
+        ],
+        "--ignore": [
+          "*.txt"
+        ],
+        "--json-pp": "-"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2022-01-08T020845.465104",
+      "end_timestamp": "2022-01-08T020845.531010",
+      "output_format_version": "1.0.0",
+      "duration": 0.06592178344726562,
+      "message": null,
+      "errors": [],
+      "extra_data": {
+        "spdx_license_list_version": "3.14",
+        "OUTDATED": "WARNING: Outdated ScanCode Toolkit version! You are using an outdated version of ScanCode Toolkit: 30.1.0 released on: 2021-09-24. A new version is available with important improvements including bug and security fixes, updated license, copyright and package detection, and improved scanning accuracy. Please download and install the latest version of ScanCode. Visit https://github.com/nexB/scancode-toolkit/releases for details.",
+        "files_count": 229
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "java-app",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/.classpath",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/.project",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/ant.settings.template",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/build.xml",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/changes",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/INSTALL",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/ivy.xml",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/ivysettings.xml",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/license.html",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/pom.xml",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/README.md",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/scancode.output",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/bin",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/bin/jasmin",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/bin/runall.sh",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/ANewArray.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/AnInterface.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/Arrays.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/Catch.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/Checkcast.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/Count.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/HelloWeb.html",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/HelloWeb.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/HelloWorld.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/Implementor.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/InvokeInterface.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/MultiANewArray.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/MultiArrays.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/NewArray.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/Switch.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/Uncaught.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/VerifyTest.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/examples/VerifyTest1.j",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/generated",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/generated/scm",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/generated/scm/AutoInit.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/generated/scm/AutoProcs.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/generated/scm/AutoTypes.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/antisamy-1.4.3.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/axis-1.4.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/axis-ant-1.3.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/axis-jaxrpc-1.4.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/axis-saaj-1.4.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/axis-wsdl4j-1.5.1.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/batik-css-1.7.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/batik-ext-1.7.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/batik-util-1.7.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/bsh-1.3.0.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/bsh-core-2.0b4.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/commons-beanutils-1.8.3.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/commons-beanutils-core-1.7.0.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/commons-collections-3.1.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/commons-configuration-1.5.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/commons-digester-1.7.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/commons-discovery-0.2.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/commons-fileupload-1.3.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/commons-httpclient-3.1.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/commons-io-2.2.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/commons-lang-2.6.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/cryptix-3.2.0.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/dom4j-1.6.1-patch1.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/edtFTPj-2.1.0.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/esapi-2.1.0.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/fontbox-1.8.10.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/gson-2.2.4.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/itext-2.1.0.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/j-interop-2.0.8-kohsuke-1.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/j-interopdeps-2.0.8-kohsuke-1.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jasperreports-3.1.0.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jaxen-1.1.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jcifs-1.2.19.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jcommon-1.0.16.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jdom-1.1.2.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jdtcore-3.2.0.v_658.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jempbox-1.8.10.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jfreechart-1.0.13.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jnative-1.3.2.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jsqlparser-0.9.4.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jxl-2.6.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/log4j-1.2.17.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/mvel2-2.2.8.Final.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/nekohtml-1.9.12.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/pdfbox-1.8.10.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/poi-3.0.1-FINAL.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/quartz-all-1.5.2.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/serializer-2.7.1.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/signicat-client-lib-2.3.2.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/slf4j-api-1.7.10.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/xalan-2.7.1.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/xml-apis-1.3.03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/xml-apis-ext-1.3.04.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/xmlsec-1.4.0.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/.jas.prcs_aux",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/CHANGES.jm",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/README",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/examples",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/examples/exprcomp.jas",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/examples/exprcomp.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/examples/hworld.jas",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/examples/hworld.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/examples/README",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/examples/simple.jas",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/examples/simple.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/examples/test.inp",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/AnnotationAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/AnnotationDefaultAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/AnnotElemValPair.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/ArrayElemValPair.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/AsciiCP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/Base64.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/BootstrapMethodsAttribute.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/CatchEntry.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/Catchtable.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/ClassCP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/ClassElemValPair.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/ClassEnv.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/CodeAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/CodeAttributeDecoder.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/ConstAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/CP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/DeprecatedAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/DoubleCP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/DoubleElemValPair.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/ElemValPair.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/EnclMethAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/EnumElemValPair.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/ExceptAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/FieldCP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/FloatCP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/FloatElemValPair.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/GenericAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/IincInsn.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/InnerClassAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/InnerClassSpecAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/Insn.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/InsnOperand.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/IntegerCP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/IntElemValPair.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/InterfaceCP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/InvokeDynamicCP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/InvokedynamicInsn.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/InvokeinterfaceInsn.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/jasError.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/Label.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/LineTableAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/LocalVarEntry.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/LocalVarTableAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/LongCP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/LongElemValPair.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/LookupswitchInsn.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/Method.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/MethodCP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/MethodHandleCP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/MultiarrayInsn.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/NameTypeCP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/Pair.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/ParameterVisibilityAnnotationAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/RuntimeConstants.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/SignatureAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/SourceAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/StringCP.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/StringElemValPair.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/SyntheticAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/TableswitchInsn.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/Var.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/jas/VisibilityAnnotationAttr.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/Cell.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/driver.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/Env.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/InsnProcedure.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/Lambda.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/Obj.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/primnode.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/Procedure.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/procinfo.class",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/SchemeError.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/scmOutputStream.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/Selfrep.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/Symbol.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/typeinfo.class",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/autogen",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/src/scm/autogen/autogen.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/tests",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/tests/all.jas",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/tests/all.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/lib/jas/tests/README",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/libs",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/libs/java_cup.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/libs/java_cup.README",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/META-INF",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/META-INF/application.xml",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/META-INF/jboss-deployment-structure.xml",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/META-INF/jboss-ejb3.xml",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/META-INF/MANIFEST.MF",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/META-INF/maven",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/META-INF/maven/com.ec",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/META-INF/maven/com.ec/ec-app",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/META-INF/maven/com.ec/ec-app/pom.properties",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/META-INF/maven/com.ec/ec-app/pom.xml",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/jasmin",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/jasmin/ClassFile.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/jasmin/InsnInfo.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/jasmin/Main.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/jasmin/parser.cup",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/jasmin/parser.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/jasmin/ReservedInstructions.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/jasmin/ReservedWords.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/jasmin/Scanner.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/jasmin/ScannerUtils.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/jasmin/sym.java",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/tables.out",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/tables.out/shortarray_0.obj",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/tables.out/shortarray_1.obj",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/src/tables.out/shortarray_2.obj",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name",
+      "type": "directory",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-api-process-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-core-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-core-ec-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-domain-jbpm-shared-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-domain-notification-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-domain-notification-shared-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-domain-procaction-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-domain-procaction-shared-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-domain-process-shared-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-domain-repository-shared-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-domain-task-shared-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-ext-ec-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-ext-ec-deprecated-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/ecbpm-ext-ec-ws-11.1.SP03.PATCH03.war",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/frmw-calc-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/frmw-config-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/frmw-core-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/frmw-ecis-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/frmw-mhm-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/frmw-pf-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/frmw-pf-jsf-11.1.SP03.PATCH03.war",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/frmw-report-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/frmw-report-jasper-client-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/log4j-core-2.13.3.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/prod-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/revn-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/sale-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    },
+    {
+      "path": "java-app/vendor/app-name/tran-11.1.SP03.PATCH03.jar",
+      "type": "file",
+      "scan_errors": []
+    }
+  ]
+}

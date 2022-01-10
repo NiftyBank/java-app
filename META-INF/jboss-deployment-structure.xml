@@ -1,0 +1,37 @@
+<jboss-deployment-structure>
+
+    <ear-subdeployments-isolated>false</ear-subdeployments-isolated>
+
+    <sub-deployment name="frmw-pf-11.1.SP03.PATCH03.jar">
+        <dependencies>
+            <system>
+                <paths>
+                    <path name="com/sun/rowset" />
+                    <path name="com/sun/rowset/providers" />
+                </paths>
+            </system>
+        </dependencies>
+    </sub-deployment>
+
+    <deployment>
+        <dependencies>
+            <module name="org.jboss.as.controller-client" />
+            <module name="org.jboss.dmr" />
+        </dependencies>
+    </deployment>
+    
+    <sub-deployment name="frmw-core-11.1.SP03.PATCH03.jar">
+        <dependencies>
+            <!-- Need the controller client for logout to work -->
+            <module name="org.jboss.as.controller-client" />
+            <module name="org.jboss.dmr" />
+        </dependencies>
+    </sub-deployment>
+
+    <sub-deployment name="frmw-pf-jsf-11.1.SP03.PATCH03.war">
+        <dependencies>
+            <module name="com.ec.wildfly.spnego-auth" services="import" optional="true"/>
+        </dependencies>
+    </sub-deployment>
+      
+</jboss-deployment-structure>

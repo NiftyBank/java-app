@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Implementation-Title: ec-app
+Implementation-Version: 11.1.SP03.PATCH03
+SCM-Revision: f1aca2ec9925
+Archiver-Version: Plexus Archiver
+Built-By: WS003034$
+Implementation-Vendor-Id: com.ec
+Build-Time: 2016-12-29 13:24:51
+Created-By: Apache Maven 3.2.5
+Build-Jdk: 1.8.0_66
+SCM-Branch: UNKNOWN
+Dependencies: com.oracle.jdbc7_g,org.jboss.as.server,org.jboss.msc,org
+ .apache.httpcomponents,org.jboss.logmanager,org.jdom,org.apache.log4j
+ ,org.apache.xerces,org.picketlink,net.sourceforge.jtds,org.jgroups,co
+ m.aspose.aspose-cells,org.apache.commons.codec,io.undertow.servlet,io
+ .undertow.core
+
